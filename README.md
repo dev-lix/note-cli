@@ -1,10 +1,10 @@
 # note-cli
 
-Ein einfaches Kommandozeilen-Tool zum Speichern und Verwalten von Notizen. Jede Notiz wird als eigene Datei unter `.notes/db/<hash>` abgelegt, wobei `<hash>` der SHA256-Hash des Inhalts ist (analog zu Git-Blobs). Dadurch werden identische Notizen automatisch dedupliziert.
+Ein einfaches Kommandozeilen-Tool zum Speichern und Verwalten von Notizen. Jede Notiz wird als eigene Datei unter `.notes/db/<hash>` abgelegt, wobei `<hash>` der SHA2-Hash des Inhalts ist (analog zu Git-Blobs). Dadurch werden identische Notizen automatisch dedupliziert.
 
 ## Installation
 
-`note-cli` ist ein einzelnes Bash-Skript ohne Abhängigkeiten (außer `bash`, `shasum` und `awk`, die auf den meisten Systemen bereits vorhanden sind).
+`note-cli` ist ein einzelnes Bash-Skript ohne Abhängigkeiten (außer `bash`, `sha256sum`/`shasum` und `awk`, die auf den meisten Systemen bereits vorhanden sind).
 
 ```bash
 chmod +x note
